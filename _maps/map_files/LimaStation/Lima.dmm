@@ -5125,12 +5125,6 @@
 	},
 /obj/effect/landmark/event_spawn,
 /obj/effect/landmark/xeno_spawn,
-/mob/living/simple_animal/hostile/retaliate/frog{
-	desc = "He looks like hes up to no good...";
-	name = "Pleb";
-	real_name = "Pleb";
-	speak = list("ribbit","croak","You Gay")
-	},
 /turf/open/floor/plasteel/dark,
 /area/janitor)
 "anL" = (
@@ -7715,10 +7709,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
-"awQ" = (
-/obj/machinery/rnd/bepis,
-/turf/open/floor/plasteel/dark,
-/area/science/lab)
 "awR" = (
 /obj/machinery/airalarm{
 	pixel_y = 24
@@ -13190,6 +13180,8 @@
 	pixel_x = -8;
 	pixel_y = 5
 	},
+/obj/item/raw_anomaly_core/random,
+/obj/item/raw_anomaly_core/random,
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/mixing)
 "aPm" = (
@@ -33210,12 +33202,7 @@
 /turf/open/floor/plating,
 /area/quartermaster/storage)
 "lwQ" = (
-/obj/machinery/requests_console{
-	department = "Cargo Bay";
-	departmentType = 2;
-	name = "Cargo Bay RC";
-	pixel_y = 30
-	},
+/obj/machinery/rnd/bepis,
 /turf/open/floor/plasteel/dark,
 /area/quartermaster/storage)
 "lwV" = (
@@ -39353,6 +39340,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
+/obj/machinery/research/explosive_compressor,
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "rkx" = (
@@ -41018,13 +41006,6 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/maintenance/central/secondary)
-"sPw" = (
-/mob/living/carbon/monkey/punpun{
-	pet_monkey_names = list("Pun Pun","Pun Pun the II","Pun Pun the III");
-	rare_pet_monkey_names = list("Russ","Father Knees","Fluff","Lily","Yerikk","Wah","Ari","Conx","Fami")
-	},
-/turf/open/floor/wood,
-/area/crew_quarters/bar)
 "sPU" = (
 /obj/structure/janitorialcart,
 /obj/item/reagent_containers/glass/bucket,
@@ -45240,10 +45221,6 @@
 	},
 /turf/open/floor/plasteel/sepia,
 /area/chapel/main)
-"wDD" = (
-/mob/living/carbon/human/species/skeleton,
-/turf/open/floor/plating,
-/area/maintenance/starboard/fore)
 "wEF" = (
 /obj/machinery/door/airlock/external{
 	name = "Escape Pod B";
@@ -83509,7 +83486,7 @@ dhi
 jHD
 kjH
 aki
-sPw
+poo
 ajr
 poo
 bkY
@@ -84549,7 +84526,7 @@ rmm
 pJb
 mXS
 giG
-awQ
+giG
 kbg
 ebC
 aLi
@@ -87881,7 +87858,7 @@ ucx
 ltM
 avA
 avA
-wDD
+avA
 vkf
 grK
 ucx
