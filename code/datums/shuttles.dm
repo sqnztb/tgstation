@@ -664,3 +664,21 @@
 /datum/map_template/shuttle/snowdin/excavation
 	suffix = "excavation"
 	name = "Snowdin Excavation Elevator"
+
+/datum/map_template/shuttle/emergency/lima
+	suffix = "lima"
+	name = "Lima Station emergency shuttle"
+	credit_cost = 7000
+	description = "A hefty shuttle for a hefty station."
+
+/datum/map_template/shuttle/cargo/lima
+	suffix = "lima"
+	name = "supply shuttle (Lima)"
+
+/datum/map_template/shuttle/mining/lima
+	suffix = "lima"
+	name = "mining shuttle (Lima)"
+
+/datum/map_template/shuttle/labour/lima
+    suffix = "lima"
+    name = "labour shuttle (Lima)"
