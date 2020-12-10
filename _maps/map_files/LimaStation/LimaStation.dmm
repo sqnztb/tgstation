@@ -10096,6 +10096,16 @@
 /obj/effect/landmark/start/quartermaster,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"aGu" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 1
+	},
+/obj/effect/turf_decal/bot{
+	dir = 1
+	},
+/obj/machinery/light,
+/turf/open/floor/plasteel,
+/area/engine/atmos)
 "aGv" = (
 /obj/machinery/door/airlock/mining{
 	name = "Cargo Bay";
@@ -12348,7 +12358,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/showroomfloor,
 /area/crew_quarters/heads/hor)
 "aNd" = (
 /obj/structure/table,
@@ -18883,6 +18893,15 @@
 /obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
+"bfz" = (
+/obj/machinery/atmospherics/pipe/simple/yellow/visible{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/engine/atmos)
 "bfA" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/open/floor/grass,
@@ -22055,6 +22074,7 @@
 /obj/machinery/holopad,
 /obj/effect/landmark/event_spawn,
 /obj/structure/cable,
+/obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/showroomfloor,
 /area/crew_quarters/heads/cmo)
 "bsQ" = (
@@ -29571,7 +29591,8 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "hUo" = (
-/turf/closed/wall,
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plasteel,
 /area/engine/atmos)
 "hUT" = (
 /obj/effect/spawner/randomcolavend,
@@ -30093,12 +30114,11 @@
 /turf/closed/wall/r_wall,
 /area/science/mixing/chamber)
 "iwo" = (
-/obj/machinery/computer/shuttle/mining{
-	dir = 1;
-	req_access = null
-	},
 /obj/structure/sign/warning/docking{
 	pixel_y = -32
+	},
+/obj/machinery/computer/shuttle/mining{
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/quartermaster/miningdock)
@@ -59010,7 +59030,7 @@ aWK
 aXJ
 aVv
 aXd
-vqy
+fLc
 pca
 aXr
 oRn
@@ -59267,7 +59287,7 @@ aVn
 vfo
 aVv
 uYj
-hUo
+vqy
 pca
 aXr
 rGw
@@ -59523,9 +59543,9 @@ fLc
 aVn
 uXS
 aVu
-uYj
+aGu
 hUo
-pca
+bfz
 aXr
 rGw
 aVi
@@ -59781,7 +59801,7 @@ aVn
 vfo
 aVv
 uYj
-hUo
+xZz
 pca
 aXr
 rGw
@@ -60038,7 +60058,7 @@ fLc
 aVw
 aVv
 aXJ
-xZz
+fLc
 pca
 hLE
 seW
@@ -86414,29 +86434,29 @@ oKW
 rif
 rif
 rif
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
 fsz
 fsz
 fsz
-gfQ
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
 ucx
 avA
 avA
@@ -86675,20 +86695,20 @@ gfQ
 gfQ
 gfQ
 gfQ
+fsz
+gfQ
+gfQ
+gfQ
+gfQ
+gfQ
+fsz
 gfQ
 gfQ
 gfQ
 gfQ
 gfQ
 gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
+fsz
 gfQ
 gfQ
 gfQ
@@ -86928,29 +86948,29 @@ hmI
 rOI
 uMD
 knB
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
 mVn
 avA
 wwO
@@ -88749,7 +88769,7 @@ gfQ
 gfQ
 gfQ
 fsz
-gfQ
+fsz
 ucx
 ucx
 tZa
@@ -89239,26 +89259,26 @@ tUB
 oWT
 hmI
 oKW
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
 fsz
 fsz
 fsz
@@ -89502,20 +89522,20 @@ gfQ
 gfQ
 gfQ
 gfQ
+fsz
+gfQ
+gfQ
+gfQ
+gfQ
+gfQ
+fsz
 gfQ
 gfQ
 gfQ
 gfQ
 gfQ
 gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
+fsz
 gfQ
 gfQ
 fsz
@@ -89753,28 +89773,28 @@ hmI
 qMo
 rOI
 rOI
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
 fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+fsz
+pjb
 fsz
 fsz
 ucx
