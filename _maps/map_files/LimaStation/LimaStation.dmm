@@ -1130,11 +1130,12 @@
 /turf/open/floor/grass,
 /area/hallway/secondary/exit)
 "acH" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
-/turf/open/floor/plasteel/white/side{
-	dir = 8
+/obj/docking_port/stationary/random{
+	id = "pod_lavaland2";
+	name = "lavaland"
 	},
-/area/hallway/secondary/entry)
+/turf/open/space/basic,
+/area/space)
 "acI" = (
 /obj/structure/window{
 	dir = 1
@@ -1306,11 +1307,15 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/hydroponics)
 "ade" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/turf/open/floor/plasteel/white/side{
-	dir = 4
+/obj/docking_port/stationary{
+	dwidth = 1;
+	height = 4;
+	name = "Escape Pod Loader";
+	roundstart_template = /datum/map_template/shuttle/escape_pod/default;
+	width = 3
 	},
-/area/hallway/secondary/entry)
+/turf/open/space/basic,
+/area/space)
 "adh" = (
 /obj/effect/spawner/randomcolavend,
 /turf/open/floor/plasteel,
@@ -4272,30 +4277,20 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "amk" = (
-/obj/machinery/camera{
-	c_tag = "Arrivals North - East";
-	dir = 4
+/obj/machinery/door/airlock/external{
+	name = "Escape Pod B";
+	safety_mode = 1
 	},
-/obj/structure/sign/warning/pods{
-	pixel_y = 32
-	},
-/obj/item/radio/intercom{
-	pixel_x = -29
-	},
-/turf/open/floor/plasteel,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/turf/open/floor/plating,
 /area/hallway/secondary/entry)
 "aml" = (
-/obj/machinery/camera{
-	c_tag = "Arrivals North - West";
-	dir = 8
+/obj/machinery/door/airlock/external{
+	name = "Escape Pod A";
+	safety_mode = 1
 	},
-/obj/structure/sign/warning/pods{
-	pixel_y = 32
-	},
-/obj/item/radio/intercom{
-	pixel_x = 29
-	},
-/turf/open/floor/plasteel,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/turf/open/floor/plating,
 /area/hallway/secondary/entry)
 "amm" = (
 /obj/structure/reagent_dispensers/peppertank{
@@ -4489,19 +4484,16 @@
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "amN" = (
-/obj/machinery/door/airlock/external{
-	name = "Escape Pod B";
-	safety_mode = 1
+/obj/machinery/light/small{
+	brightness = 3;
+	dir = 8
 	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
 "amO" = (
-/obj/machinery/door/airlock/external{
-	name = "Escape Pod A";
-	safety_mode = 1
+/obj/structure/closet/emcloset{
+	anchored = 1
 	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
 "amP" = (
@@ -4539,14 +4531,17 @@
 /area/hallway/secondary/entry)
 "amS" = (
 /obj/machinery/light/small{
-	brightness = 3;
-	dir = 8
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
 "amT" = (
-/obj/machinery/light/small{
-	dir = 4
+/obj/machinery/door/airlock/external{
+	name = "Escape Pod B";
+	safety_mode = 1
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
 	},
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
@@ -4666,16 +4661,14 @@
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "anq" = (
-/obj/structure/closet/emcloset{
-	anchored = 1
+/obj/machinery/door/airlock/external{
+	name = "Escape Pod A";
+	safety_mode = 1
 	},
-/turf/open/floor/plating,
-/area/hallway/secondary/entry)
-"anr" = (
-/obj/structure/closet/emcloset,
-/turf/open/floor/plasteel/white/side{
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
+/turf/open/floor/plating,
 /area/hallway/secondary/entry)
 "ans" = (
 /obj/structure/table,
@@ -4967,10 +4960,17 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/main)
 "aop" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/turf/open/floor/plasteel/white/side{
-	dir = 8
+/obj/machinery/camera{
+	c_tag = "Arrivals North - East";
+	dir = 4
 	},
+/obj/structure/sign/warning/pods{
+	pixel_y = 32
+	},
+/obj/item/radio/intercom{
+	pixel_x = -29
+	},
+/turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "aou" = (
 /obj/machinery/button/door{
@@ -5351,7 +5351,7 @@
 /turf/open/floor/plasteel,
 /area/security/brig)
 "apE" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/plasteel/white/side{
 	dir = 4
 	},
@@ -6204,9 +6204,9 @@
 	},
 /area/maintenance/starboard/aft)
 "asZ" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/plasteel/white/side{
-	dir = 1
+	dir = 8
 	},
 /area/hallway/secondary/entry)
 "ata" = (
@@ -6282,10 +6282,17 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "atq" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/turf/open/floor/plasteel/white/side{
-	dir = 1
+/obj/machinery/camera{
+	c_tag = "Arrivals North - West";
+	dir = 8
 	},
+/obj/structure/sign/warning/pods{
+	pixel_y = 32
+	},
+/obj/item/radio/intercom{
+	pixel_x = 29
+	},
+/turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "att" = (
 /obj/structure/table,
@@ -8431,8 +8438,10 @@
 /turf/open/floor/plasteel,
 /area/storage/art)
 "aBu" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/turf/open/floor/plasteel/white/side,
+/obj/structure/closet/emcloset,
+/turf/open/floor/plasteel/white/side{
+	dir = 5
+	},
 /area/hallway/secondary/entry)
 "aBv" = (
 /obj/machinery/telecomms/processor/preset_two,
@@ -9694,6 +9703,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/construction/mining/aux_base)
+"aHs" = (
+/obj/effect/spawner/randomsnackvend,
+/turf/open/floor/plasteel/white/side{
+	dir = 4
+	},
+/area/hallway/secondary/entry)
 "aHt" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 5
@@ -10064,8 +10079,10 @@
 /turf/open/floor/grass,
 /area/science/genetics)
 "aIv" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/turf/open/floor/plasteel/white/side,
+/obj/structure/closet/emcloset,
+/turf/open/floor/plasteel/white/side{
+	dir = 9
+	},
 /area/hallway/secondary/entry)
 "aIw" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -24732,15 +24749,11 @@
 /turf/open/floor/plasteel,
 /area/science/nanite)
 "dUr" = (
-/obj/docking_port/stationary{
-	dwidth = 1;
-	height = 4;
-	name = "Escape Pod Loader";
-	roundstart_template = /datum/map_template/shuttle/escape_pod/default;
-	width = 3
+/obj/effect/spawner/randomcolavend,
+/turf/open/floor/plasteel/white/side{
+	dir = 4
 	},
-/turf/open/space/basic,
-/area/space)
+/area/hallway/secondary/entry)
 "dUu" = (
 /obj/structure/window{
 	dir = 4
@@ -28194,14 +28207,10 @@
 /turf/open/floor/wood,
 /area/library)
 "gNZ" = (
-/obj/machinery/door/airlock/external{
-	name = "Escape Pod A";
-	safety_mode = 1
+/obj/effect/spawner/randomsnackvend,
+/turf/open/floor/plasteel/white/side{
+	dir = 8
 	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
-	},
-/turf/open/floor/plating,
 /area/hallway/secondary/entry)
 "gOp" = (
 /obj/structure/bookcase{
@@ -29810,8 +29819,9 @@
 /turf/open/floor/plasteel,
 /area/bridge)
 "ipn" = (
-/obj/effect/spawner/randomcolavend,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/white/side{
+	dir = 4
+	},
 /area/hallway/secondary/entry)
 "ipp" = (
 /obj/machinery/atmospherics/pipe/layer_manifold{
@@ -30501,10 +30511,6 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering)
-"jag" = (
-/obj/effect/spawner/randomsnackvend,
-/turf/open/floor/plasteel,
-/area/hallway/secondary/entry)
 "jah" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 9
@@ -30645,6 +30651,14 @@
 	icon_state = "wood-broken2"
 	},
 /area/maintenance/starboard/aft)
+"jip" = (
+/obj/structure/chair{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white/side{
+	dir = 4
+	},
+/area/hallway/secondary/entry)
 "jiQ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
@@ -32059,6 +32073,12 @@
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
+"kBA" = (
+/obj/effect/spawner/randomcolavend,
+/turf/open/floor/plasteel/white/side{
+	dir = 8
+	},
+/area/hallway/secondary/entry)
 "kBX" = (
 /obj/machinery/airalarm{
 	pixel_y = 24
@@ -32350,6 +32370,12 @@
 /obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/crew_quarters/theatre)
+"kQw" = (
+/obj/item/kirbyplants/random,
+/turf/open/floor/plasteel/white/side{
+	dir = 8
+	},
+/area/hallway/secondary/entry)
 "kRs" = (
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating{
@@ -33047,6 +33073,11 @@
 "lzF" = (
 /turf/open/floor/plasteel/showroomfloor,
 /area/quartermaster/office)
+"lzL" = (
+/turf/open/floor/plasteel/white/side{
+	dir = 9
+	},
+/area/hallway/secondary/entry)
 "lAA" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
@@ -35244,6 +35275,14 @@
 "nCm" = (
 /turf/open/floor/plasteel,
 /area/security/processing)
+"nCs" = (
+/obj/structure/chair{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white/side{
+	dir = 8
+	},
+/area/hallway/secondary/entry)
 "nCW" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/extinguisher_cabinet{
@@ -36185,8 +36224,10 @@
 /turf/closed/wall/r_wall,
 /area/tcommsat/computer)
 "ozD" = (
-/obj/machinery/vending/cigarette,
-/turf/open/floor/plasteel/white/side,
+/obj/item/kirbyplants/random,
+/turf/open/floor/plasteel/white/side{
+	dir = 6
+	},
 /area/hallway/secondary/entry)
 "ozE" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -36289,9 +36330,13 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/crew_quarters/heads/hor)
 "oBY" = (
-/obj/docking_port/stationary/random{
-	id = "pod_lavaland2";
-	name = "lavaland"
+/obj/docking_port/stationary{
+	dir = 8;
+	dwidth = 11;
+	height = 19;
+	id = "whiteship_home";
+	name = "SS13: Auxiliary Dock, Station-Fore";
+	width = 11
 	},
 /turf/open/space/basic,
 /area/space)
@@ -36812,8 +36857,10 @@
 /turf/open/floor/plasteel,
 /area/security/brig)
 "pcX" = (
-/obj/effect/spawner/randomcolavend,
-/turf/open/floor/plasteel/white/side,
+/obj/item/kirbyplants/random,
+/turf/open/floor/plasteel/white/side{
+	dir = 10
+	},
 /area/hallway/secondary/entry)
 "pde" = (
 /obj/machinery/shower{
@@ -37448,6 +37495,12 @@
 	pixel_y = -24
 	},
 /turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
+"pBK" = (
+/obj/machinery/vending/cigarette,
+/turf/open/floor/plasteel/white/side{
+	dir = 4
+	},
 /area/hallway/secondary/entry)
 "pCh" = (
 /turf/open/space/basic,
@@ -38670,8 +38723,9 @@
 /turf/open/floor/plating,
 /area/maintenance/port)
 "qLO" = (
-/obj/machinery/vending/cigarette,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/white/side{
+	dir = 8
+	},
 /area/hallway/secondary/entry)
 "qLT" = (
 /obj/structure/sink{
@@ -38737,6 +38791,15 @@
 /obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/security/brig)
+"qQc" = (
+/obj/machinery/door/airlock/external{
+	name = "External Docking Port"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "qQd" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -39701,6 +39764,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/courtroom)
+"rKW" = (
+/obj/item/kirbyplants/random,
+/turf/open/floor/plasteel/white/side{
+	dir = 4
+	},
+/area/hallway/secondary/entry)
 "rLe" = (
 /obj/machinery/suit_storage_unit/captain,
 /turf/open/floor/wood,
@@ -40313,6 +40382,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/janitor)
+"soC" = (
+/obj/machinery/vending/cigarette,
+/turf/open/floor/plasteel/white/side{
+	dir = 8
+	},
+/area/hallway/secondary/entry)
 "soJ" = (
 /obj/machinery/conveyor{
 	id = "Robotics Belt A";
@@ -40676,6 +40751,11 @@
 /obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/service)
+"sIB" = (
+/turf/open/floor/plasteel/white/side{
+	dir = 5
+	},
+/area/hallway/secondary/entry)
 "sKc" = (
 /obj/structure/table,
 /obj/item/stack/sheet/metal/fifty,
@@ -45083,11 +45163,10 @@
 /area/chapel/main)
 "wEF" = (
 /obj/machinery/door/airlock/external{
-	name = "Escape Pod B";
-	safety_mode = 1
+	name = "External Docking Port"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
@@ -71011,7 +71090,7 @@ gfQ
 gfQ
 gfQ
 hqX
-anr
+aBu
 bxP
 bxP
 qfz
@@ -71510,7 +71589,7 @@ gfQ
 gfQ
 gfQ
 gfQ
-gfQ
+oBY
 gfQ
 gfQ
 gfQ
@@ -71526,7 +71605,7 @@ gfQ
 vnA
 nrY
 fqa
-amL
+amK
 bxP
 hqX
 nrY
@@ -71766,9 +71845,9 @@ gfQ
 gfQ
 gfQ
 gfQ
-gfQ
-gfQ
-gfQ
+hqX
+wEF
+hqX
 gfQ
 gfQ
 gfQ
@@ -72023,9 +72102,9 @@ gfQ
 gfQ
 gfQ
 gfQ
-gfQ
-gfQ
-gfQ
+hqX
+nrY
+hqX
 gfQ
 gfQ
 gfQ
@@ -72039,7 +72118,7 @@ gfQ
 gfQ
 gfQ
 hqX
-amK
+lzL
 bxP
 bxP
 iGP
@@ -72273,20 +72352,20 @@ gfQ
 gfQ
 gfQ
 gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
 iEE
 iEE
 iEE
 iEE
 iEE
+hqX
+hqX
+hqX
+qQc
+hqX
+hqX
+hqX
+hqX
+hqX
 hqX
 hqX
 hqX
@@ -72530,20 +72609,20 @@ gfQ
 gfQ
 gfQ
 gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
 nAh
-amS
+amN
 nAh
-amk
+aop
 vUx
+bxP
+bxP
+bxP
+bxP
+bxP
+bxP
+bxP
+bxP
+bxP
 bxP
 bxP
 bxP
@@ -72782,34 +72861,34 @@ gfQ
 gfQ
 gfQ
 gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-oBY
-gfQ
-gfQ
-gfQ
-dUr
-amN
-nrY
-wEF
 acH
+gfQ
+gfQ
+gfQ
+ade
+amk
+nrY
+amT
+apE
 agk
-aop
-asZ
+agk
 awa
 awa
-aBu
-aop
+awa
+awa
+awa
+awa
+awa
+awa
+awa
+awa
+awa
+awa
+awa
 agk
-aop
-asZ
+agk
+agk
+awa
 awa
 bSs
 bxP
@@ -73044,22 +73123,22 @@ gfQ
 gfQ
 gfQ
 gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
 nAh
-anq
+amO
 nAh
 hqX
 agN
 hqX
 amK
+bxP
+bxP
+bxP
+bxP
+bxP
+bxP
+bxP
+bxP
+bxP
 bxP
 bxP
 amL
@@ -73301,24 +73380,24 @@ gfQ
 gfQ
 gfQ
 gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
 iEE
 iEE
 iEE
 hqX
 nrY
 hqX
-anr
+aBu
+dUr
+aHs
+pBK
+rKW
 ipn
-jag
+jip
+jip
+ipn
+ipn
+ipn
+ipn
 ozD
 hqX
 nrY
@@ -73561,17 +73640,17 @@ gfQ
 gfQ
 gfQ
 gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
 hqX
 jNu
+hqX
+hqX
+hqX
+hqX
+hqX
+hqX
+hqX
+hqX
+hqX
 hqX
 hqX
 hqX
@@ -74583,16 +74662,16 @@ gfQ
 gfQ
 gfQ
 gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
 qsq
+gfQ
+gfQ
+gfQ
+gfQ
+gfQ
+gfQ
+gfQ
+gfQ
+gfQ
 gfQ
 gfQ
 gfQ
@@ -75617,17 +75696,17 @@ gfQ
 gfQ
 gfQ
 gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
 hqX
 agN
+hqX
+hqX
+hqX
+hqX
+hqX
+hqX
+hqX
+hqX
+hqX
 hqX
 hqX
 hqX
@@ -75871,23 +75950,23 @@ gfQ
 gfQ
 gfQ
 gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
 iEE
 iEE
 iEE
 hqX
 nrY
 hqX
-anr
-jag
+aIv
+gNZ
+soC
+kBA
+kQw
+qLO
+nCs
+nCs
+qLO
+qLO
+qLO
 qLO
 pcX
 hqX
@@ -76128,22 +76207,22 @@ gfQ
 gfQ
 gfQ
 gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
 nAh
-anq
+amO
 nAh
 hqX
 jNu
 hqX
 amK
+bxP
+bxP
+bxP
+bxP
+bxP
+bxP
+bxP
+bxP
+bxP
 bxP
 bxP
 amL
@@ -76380,34 +76459,34 @@ gfQ
 gfQ
 gfQ
 gfQ
+acH
 gfQ
 gfQ
 gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-oBY
-gfQ
-gfQ
-gfQ
-dUr
-amO
-nrY
-gNZ
 ade
+aml
+nrY
+anq
+asZ
 adn
-apE
-atq
+adn
 azs
 azs
-aIv
-apE
+azs
+azs
+azs
+azs
+azs
+azs
+azs
+azs
+azs
+azs
+azs
 adn
-apE
-atq
+adn
+adn
+azs
 azs
 eOb
 pBJ
@@ -76642,20 +76721,20 @@ gfQ
 gfQ
 gfQ
 gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
 nAh
-amT
+amS
 iEE
-aml
+atq
 eat
+bxP
+bxP
+bxP
+bxP
+bxP
+bxP
+bxP
+bxP
+bxP
 bxP
 bxP
 bxP
@@ -76899,20 +76978,20 @@ gfQ
 gfQ
 gfQ
 gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
-gfQ
 iEE
 iEE
 iEE
 iEE
 iEE
+hqX
+hqX
+hqX
+hqX
+hqX
+hqX
+hqX
+hqX
+hqX
 hqX
 hqX
 hqX
@@ -77179,7 +77258,7 @@ gfQ
 gfQ
 gfQ
 hqX
-amK
+sIB
 bxP
 bxP
 nAh
@@ -77437,7 +77516,7 @@ gfQ
 hqX
 hqX
 hqX
-amL
+amK
 flU
 nAh
 gfQ
@@ -77951,7 +78030,7 @@ gfQ
 hqX
 hqX
 hqX
-amL
+amK
 bxP
 oAb
 oCD
@@ -78207,7 +78286,7 @@ gfQ
 gfQ
 gfQ
 hqX
-anr
+aIv
 eat
 vuN
 nAh
