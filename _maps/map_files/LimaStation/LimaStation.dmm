@@ -3030,10 +3030,7 @@
 /area/crew_quarters/fitness)
 "ahY" = (
 /obj/structure/table,
-/obj/machinery/reagentgrinder{
-	desc = "Used to grind things up into raw materials and liquids.";
-	pixel_y = 5
-	},
+/obj/machinery/reagentgrinder,
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
 "ahZ" = (
