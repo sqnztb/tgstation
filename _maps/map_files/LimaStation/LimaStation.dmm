@@ -3038,6 +3038,7 @@
 /area/crew_quarters/kitchen)
 "ahZ" = (
 /obj/structure/table,
+/obj/item/book/manual/wiki/cooking_to_serve_man,
 /obj/item/reagent_containers/food/condiment/peppermill{
 	pixel_x = 3
 	},
@@ -3608,7 +3609,7 @@
 /area/crew_quarters/kitchen)
 "ajU" = (
 /obj/structure/table,
-/obj/item/book/manual/wiki/cooking_to_serve_man,
+/obj/item/kitchen/rollingpin,
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
 "ajV" = (
@@ -10435,9 +10436,8 @@
 /turf/open/floor/wood,
 /area/library)
 "aJl" = (
-/obj/structure/table,
-/obj/item/book/manual/chef_recipes,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
 "aJm" = (
@@ -12258,17 +12258,22 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
 "aOV" = (
-/obj/structure/table,
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/structure/table,
+/obj/machinery/microwave{
+	pixel_y = 4
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
 "aOW" = (
-/obj/structure/table,
-/obj/item/kitchen/rollingpin,
 /obj/structure/disposalpipe/segment{
 	dir = 9
+	},
+/obj/structure/table,
+/obj/machinery/microwave{
+	pixel_y = 4
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
@@ -21241,10 +21246,7 @@
 /turf/open/floor/grass,
 /area/science/lab)
 "brX" = (
-/obj/structure/table,
-/obj/machinery/microwave{
-	pixel_y = 4
-	},
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
 "bsb" = (
@@ -33970,7 +33972,9 @@
 	location = "Bar"
 	},
 /obj/structure/plasticflaps/opaque,
-/turf/open/floor/plating,
+/turf/open/floor/mineral/plastitanium{
+	name = "black plastitanium floor"
+	},
 /area/maintenance/central)
 "mBV" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -44394,6 +44398,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"vUW" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/table,
+/turf/open/floor/plasteel/cafeteria,
+/area/crew_quarters/kitchen)
 "vVN" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating,
@@ -72407,7 +72418,7 @@ aBU
 vDE
 brX
 gDC
-brX
+vDE
 aOV
 imp
 aTW
@@ -73177,7 +73188,7 @@ kAB
 rNp
 aCg
 mmN
-gDC
+vUW
 aGF
 ahY
 vDE
