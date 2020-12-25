@@ -26515,11 +26515,6 @@
 /obj/machinery/telecomms/receiver/preset_right,
 /turf/open/floor/plasteel/dark/telecomms,
 /area/tcommsat/server)
-"fuD" = (
-/obj/effect/decal/cleanable/vomit/old,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/airless,
-/area/space/nearstation)
 "fuF" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -39062,9 +39057,7 @@
 /obj/machinery/smartfridge/drinks{
 	icon_state = "boozeomat"
 	},
-/turf/open/floor/mineral/plastitanium{
-	name = "black plastitanium floor"
-	},
+/turf/closed/wall,
 /area/crew_quarters/bar)
 "rde" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -76234,7 +76227,7 @@ bxP
 emn
 als
 nAh
-nAh
+hqX
 hqX
 hqX
 hqX
@@ -88283,7 +88276,7 @@ hmI
 rOI
 ddR
 oWT
-fuD
+hmI
 gyP
 oWT
 oWT
