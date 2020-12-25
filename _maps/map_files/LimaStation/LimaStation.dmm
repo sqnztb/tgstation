@@ -3048,10 +3048,18 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
 "aib" = (
-/obj/effect/turf_decal/stripes/box,
-/obj/machinery/processor,
-/turf/open/floor/plasteel/dark,
-/area/crew_quarters/kitchen)
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -26
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
 "aic" = (
 /obj/machinery/processor,
 /obj/effect/turf_decal/stripes/box,
@@ -12244,23 +12252,13 @@
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "aOT" = (
-/obj/machinery/disposal/bin,
-/obj/effect/turf_decal/stripes/box,
-/obj/structure/disposalpipe/trunk{
+/obj/machinery/vending/dinnerware,
+/obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/kitchen)
-"aOU" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel/cafeteria,
-/area/crew_quarters/kitchen)
 "aOV" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/table,
 /obj/machinery/microwave{
 	pixel_y = 4
@@ -12268,13 +12266,11 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
 "aOW" = (
-/obj/structure/disposalpipe/segment{
-	dir = 9
-	},
 /obj/structure/table,
 /obj/machinery/microwave{
 	pixel_y = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
 "aOX" = (
@@ -12880,17 +12876,6 @@
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
-"aQE" = (
-/obj/structure/disposalpipe/segment,
-/obj/item/radio/intercom{
-	pixel_x = 29
-	},
-/obj/machinery/light_switch{
-	pixel_x = 22;
-	pixel_y = 11
-	},
-/turf/open/floor/plasteel/cafeteria,
-/area/crew_quarters/kitchen)
 "aQF" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -14971,6 +14956,15 @@
 /area/storage/art)
 "aXQ" = (
 /obj/machinery/light,
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/obj/machinery/requests_console{
+	department = "Kitchen";
+	departmentType = 2;
+	name = "Kitchen RC";
+	pixel_y = -30
+	},
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
 "aXR" = (
@@ -23471,17 +23465,14 @@
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "cTO" = (
-/obj/machinery/airalarm{
-	dir = 4;
-	pixel_x = -24
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk{
+	dir = 4
 	},
-/obj/machinery/requests_console{
-	department = "Kitchen";
-	departmentType = 2;
-	name = "Kitchen RC";
-	pixel_y = -30
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
 	},
-/turf/open/floor/plasteel/cafeteria,
+/turf/open/floor/plasteel/dark,
 /area/crew_quarters/kitchen)
 "cUn" = (
 /obj/effect/decal/cleanable/dirt,
@@ -28387,8 +28378,12 @@
 /turf/open/floor/plasteel,
 /area/engine/atmos)
 "gTx" = (
-/obj/structure/falsewall{
-	dir = 8
+/obj/item/radio/intercom{
+	pixel_x = 29
+	},
+/obj/machinery/light_switch{
+	pixel_x = 22;
+	pixel_y = 11
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
@@ -29756,6 +29751,9 @@
 /obj/machinery/firealarm{
 	dir = 1;
 	pixel_y = -24
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
@@ -31431,16 +31429,6 @@
 	icon_state = "panelscorched"
 	},
 /area/maintenance/central)
-"jZg" = (
-/obj/effect/turf_decal/tile/brown{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/brown,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -26
-	},
-/turf/open/floor/plasteel,
-/area/hallway/primary/central)
 "jZY" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -37987,12 +37975,19 @@
 /turf/open/floor/carpet/black,
 /area/security/prison)
 "qaV" = (
-/obj/machinery/vending/dinnerware,
 /obj/machinery/camera{
 	c_tag = "Kitchen";
 	dir = 4
 	},
-/turf/open/floor/plasteel/cafeteria,
+/obj/machinery/airalarm{
+	dir = 4;
+	pixel_x = -24
+	},
+/obj/machinery/processor,
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/turf/open/floor/plasteel/dark,
 /area/crew_quarters/kitchen)
 "qbS" = (
 /obj/effect/turf_decal/tile/purple,
@@ -43907,7 +43902,9 @@
 /turf/closed/wall,
 /area/security/main)
 "vxK" = (
-/obj/effect/spawner/lootdrop/organ_spawner,
+/obj/structure/falsewall{
+	dir = 8
+	},
 /turf/open/floor/plating,
 /area/crew_quarters/kitchen)
 "vye" = (
@@ -44982,6 +44979,9 @@
 /obj/machinery/button/door{
 	id = "kitchen";
 	pixel_y = -27
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
@@ -72162,7 +72162,7 @@ aCg
 vDE
 aCs
 aCg
-aOU
+vDE
 wwd
 aTW
 aal
@@ -73448,7 +73448,7 @@ jnU
 aJZ
 aIN
 aOX
-aQE
+aIN
 aVH
 bbq
 bbW
@@ -73704,7 +73704,7 @@ vDE
 vDE
 vDE
 vDE
-aib
+vDE
 gTx
 aTW
 oRT
@@ -73961,7 +73961,7 @@ kAB
 kAB
 kAB
 kAB
-aTW
+kAB
 vxK
 aTW
 acS
@@ -74218,7 +74218,7 @@ rnH
 fwl
 fwl
 fwl
-aTW
+fwl
 aTW
 aTW
 aao
@@ -74475,8 +74475,8 @@ aXG
 aXG
 aXG
 aXG
-jZg
-aXY
+aXG
+aib
 aTl
 aTq
 aTq
