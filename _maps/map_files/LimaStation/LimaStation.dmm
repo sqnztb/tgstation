@@ -22129,6 +22129,9 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/item/radio/intercom{
+	pixel_x = -29
+	},
 /turf/open/floor/plasteel,
 /area/hydroponics/garden)
 "bJL" = (
