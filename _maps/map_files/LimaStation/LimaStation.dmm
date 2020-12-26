@@ -7791,6 +7791,12 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
+"ayD" = (
+/obj/machinery/door/airlock/maintenance{
+	name = "Workshop"
+	},
+/turf/open/floor/plasteel,
+/area/security/prison)
 "ayE" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -21736,13 +21742,6 @@
 	},
 /turf/open/floor/carpet/black,
 /area/crew_quarters/bar)
-"bwK" = (
-/obj/item/mop,
-/obj/item/reagent_containers/glass/bucket,
-/obj/item/reagent_containers/glass/bucket,
-/obj/item/mop,
-/turf/open/floor/plating,
-/area/security/prison)
 "bxj" = (
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plating,
@@ -24941,6 +24940,7 @@
 "eai" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/donkpockets,
+/obj/item/kitchen/knife/plastic,
 /turf/open/floor/plasteel/cafeteria,
 /area/security/prison)
 "eat" = (
@@ -28809,7 +28809,7 @@
 /turf/open/floor/wood,
 /area/crew_quarters/bar)
 "hlk" = (
-/obj/structure/frame/machine,
+/obj/machinery/plate_press,
 /turf/open/floor/plating,
 /area/security/prison)
 "hlp" = (
@@ -33054,6 +33054,11 @@
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plating,
 /area/maintenance/fore)
+"lxa" = (
+/obj/item/reagent_containers/glass/bucket,
+/obj/item/mop,
+/turf/open/floor/plasteel,
+/area/security/prison)
 "lxT" = (
 /obj/machinery/computer/atmos_alert{
 	dir = 1
@@ -36014,17 +36019,9 @@
 /area/security/prison)
 "omL" = (
 /obj/structure/closet/crate,
-/obj/item/reagent_containers/glass/bowl,
-/obj/item/reagent_containers/glass/bowl,
-/obj/item/reagent_containers/glass/bowl,
-/obj/item/reagent_containers/glass/bowl,
-/obj/item/reagent_containers/glass/bowl,
-/obj/item/reagent_containers/glass/beaker,
-/obj/effect/spawner/lootdrop/maintenance/three,
-/obj/item/poster/random_contraband,
-/obj/item/poster/random_official,
-/obj/effect/spawner/lootdrop/prison_contraband,
-/obj/effect/spawner/lootdrop/prison_contraband,
+/obj/item/stack/license_plates/empty/fifty,
+/obj/item/stack/license_plates/empty/fifty,
+/obj/item/stack/license_plates/empty/fifty,
 /turf/open/floor/plating,
 /area/security/prison)
 "omU" = (
@@ -37517,6 +37514,21 @@
 "pCh" = (
 /turf/open/space/basic,
 /area/space/nearstation)
+"pCi" = (
+/obj/structure/closet/crate,
+/obj/item/reagent_containers/glass/bowl,
+/obj/item/reagent_containers/glass/bowl,
+/obj/item/reagent_containers/glass/bowl,
+/obj/item/reagent_containers/glass/bowl,
+/obj/item/reagent_containers/glass/bowl,
+/obj/item/reagent_containers/glass/beaker,
+/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/item/poster/random_contraband,
+/obj/item/poster/random_official,
+/obj/effect/spawner/lootdrop/prison_contraband,
+/obj/effect/spawner/lootdrop/prison_contraband,
+/turf/open/floor/plating,
+/area/security/prison)
 "pCJ" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -44759,8 +44771,7 @@
 	},
 /area/crew_quarters/bar)
 "woo" = (
-/obj/structure/table,
-/obj/item/kitchen/knife/plastic,
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/cafeteria,
 /area/security/prison)
 "woz" = (
@@ -55709,8 +55720,8 @@ uRw
 wMi
 sOT
 fdq
-bwK
 hlk
+omL
 eoG
 fsz
 gfQ
@@ -55965,7 +55976,7 @@ yeE
 yeE
 iaO
 yeE
-kyH
+ayD
 aga
 gxD
 eoG
@@ -57765,7 +57776,7 @@ uds
 iaO
 yeE
 fdq
-yeE
+lxa
 yeE
 nDO
 dNR
@@ -58793,7 +58804,7 @@ fdq
 iaO
 yeE
 fdq
-aga
+pCi
 pRK
 afD
 fdq
