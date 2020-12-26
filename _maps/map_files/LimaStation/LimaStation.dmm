@@ -8349,13 +8349,6 @@
 	},
 /turf/open/floor/plasteel/freezer,
 /area/crew_quarters/toilet)
-"aBh" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Bathroom Maintenance";
-	req_access_txt = "12"
-	},
-/turf/open/floor/plasteel/freezer,
-/area/crew_quarters/toilet)
 "aBj" = (
 /obj/structure/table,
 /obj/item/storage/crayons{
@@ -17843,13 +17836,13 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "bfe" = (
-/obj/machinery/door/airlock/maintenance{
-	req_one_access_txt = "8;12"
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /obj/structure/cable,
+/obj/machinery/door/airlock/maintenance{
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "bff" = (
@@ -20717,6 +20710,7 @@
 /area/science/xenobiology)
 "blj" = (
 /obj/machinery/power/smes,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/maintenance/department/electrical)
 "bll" = (
@@ -25956,13 +25950,12 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "ePQ" = (
-/obj/machinery/airalarm/engine{
-	acid_level = null;
-	dir = 8;
-	pixel_x = 24
-	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
+	},
+/obj/machinery/airalarm/engine{
+	dir = 8;
+	pixel_x = 24
 	},
 /turf/open/floor/engine,
 /area/engine/supermatter)
@@ -28192,6 +28185,7 @@
 /area/tcommsat/server)
 "gMC" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/maintenance/department/electrical)
 "gMW" = (
@@ -30092,10 +30086,10 @@
 	},
 /area/science/server)
 "iEC" = (
-/obj/machinery/door/airlock/maintenance{
-	req_one_access_txt = "8;12"
-	},
 /obj/structure/cable,
+/obj/machinery/door/airlock/maintenance{
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "iED" = (
@@ -44875,11 +44869,11 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/hydroponics)
 "wrE" = (
-/obj/machinery/door/airlock/maintenance{
-	req_one_access_txt = "8;12"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/structure/cable,
+/obj/machinery/door/airlock/maintenance{
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "wsd" = (
@@ -78345,7 +78339,7 @@ obk
 obk
 obk
 fXh
-aBh
+aBA
 fXh
 fXh
 fXh
@@ -83539,7 +83533,7 @@ bkE
 fCn
 gCG
 vKn
-nwO
+lgT
 hqs
 tCY
 fCn
@@ -83797,7 +83791,7 @@ fCn
 lgT
 qyk
 gHg
-lgT
+nwO
 blj
 fCn
 gfQ
@@ -84311,7 +84305,7 @@ fCn
 lgT
 btC
 hqs
-lgT
+nwO
 blj
 fCn
 gfQ
