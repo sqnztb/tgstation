@@ -22503,6 +22503,7 @@
 "cbH" = (
 /obj/effect/decal/cleanable/generic,
 /obj/structure/cable,
+/obj/effect/loot_site_spawner,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "cbY" = (
@@ -23194,6 +23195,7 @@
 	pixel_x = -25
 	},
 /obj/structure/cable,
+/obj/effect/loot_site_spawner,
 /turf/open/floor/plating,
 /area/maintenance/central)
 "cFO" = (
@@ -23518,6 +23520,7 @@
 /area/bridge)
 "cXi" = (
 /obj/effect/decal/cleanable/generic,
+/obj/effect/loot_site_spawner,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "cXj" = (
@@ -24750,6 +24753,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/science/nanite)
+"dTQ" = (
+/obj/effect/loot_site_spawner,
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
+	},
+/area/maintenance/central)
 "dUr" = (
 /obj/effect/spawner/randomcolavend,
 /turf/open/floor/plasteel/white/side{
@@ -26158,7 +26167,7 @@
 /turf/open/floor/carpet/royalblue,
 /area/crew_quarters/heads/captain)
 "fcH" = (
-/obj/structure/mopbucket,
+/obj/effect/loot_site_spawner,
 /turf/open/floor/plating,
 /area/maintenance/port)
 "fcS" = (
@@ -26726,6 +26735,7 @@
 	pixel_x = 26
 	},
 /obj/structure/cable,
+/obj/effect/loot_site_spawner,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "fAP" = (
@@ -29595,6 +29605,7 @@
 /obj/structure/sign/warning/pods{
 	pixel_x = -32
 	},
+/obj/effect/loot_site_spawner,
 /turf/open/floor/plating,
 /area/maintenance/port)
 "idL" = (
@@ -29651,6 +29662,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "ihD" = (
+/obj/effect/loot_site_spawner,
 /turf/open/floor/plating{
 	icon_state = "platingdmg2"
 	},
@@ -30273,6 +30285,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
+"iMU" = (
+/obj/effect/loot_site_spawner,
+/turf/open/floor/plating,
+/area/maintenance/aft)
 "iOO" = (
 /obj/machinery/door/airlock/research{
 	name = "Xenobiology Lab";
@@ -30643,6 +30659,10 @@
 "jgc" = (
 /turf/open/floor/plasteel/white,
 /area/science/research)
+"jgR" = (
+/obj/effect/loot_site_spawner,
+/turf/open/floor/plating,
+/area/maintenance/central/secondary)
 "jhq" = (
 /obj/structure/closet/crate,
 /obj/item/clothing/head/lobsterhat,
@@ -31970,6 +31990,7 @@
 /obj/structure/rack,
 /obj/item/clothing/suit/hooded/wintercoat,
 /obj/item/clothing/shoes/winterboots,
+/obj/item/wrench,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
 "kxY" = (
@@ -32733,7 +32754,6 @@
 	name = "Xenobiology APC";
 	pixel_x = -25
 	},
-/obj/effect/decal/cleanable/xenoblood/xgibs/larva,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/science/xenobiology)
@@ -32863,6 +32883,7 @@
 /area/security/main)
 "lok" = (
 /obj/structure/closet/secure_closet/cytology,
+/obj/item/circuitboard/machine/gibber,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
 "lom" = (
@@ -34260,7 +34281,8 @@
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 8
 	},
-/obj/item/wrench,
+/obj/item/reagent_containers/glass/bucket,
+/obj/item/mop,
 /turf/open/floor/plating,
 /area/science/xenobiology)
 "mPM" = (
@@ -36409,7 +36431,6 @@
 /area/hallway/primary/aft)
 "oFv" = (
 /obj/structure/cable,
-/obj/machinery/door/airlock/maintenance,
 /turf/open/floor/plating{
 	icon_state = "platingdmg2"
 	},
@@ -37082,6 +37103,10 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/storage)
+"plq" = (
+/obj/effect/loot_site_spawner,
+/turf/open/floor/plating,
+/area/maintenance/port/aft)
 "plV" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
 /turf/open/floor/wood,
@@ -38284,6 +38309,11 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/engine/engineering)
+"qov" = (
+/obj/structure/cable,
+/obj/machinery/door/airlock/maintenance,
+/turf/open/floor/plating,
+/area/maintenance/fore)
 "qqd" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin{
@@ -39471,6 +39501,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/effect/loot_site_spawner,
 /turf/open/floor/plating,
 /area/maintenance/aft)
 "rvF" = (
@@ -39506,6 +39537,12 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/maintenance/aft)
+"rxV" = (
+/obj/effect/loot_site_spawner,
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/maintenance/port)
 "rxZ" = (
 /obj/machinery/computer/security/labor,
 /turf/open/floor/plasteel/dark,
@@ -44339,6 +44376,10 @@
 	},
 /turf/open/floor/carpet/orange,
 /area/security/detectives_office)
+"vQN" = (
+/obj/effect/loot_site_spawner,
+/turf/open/floor/plating,
+/area/maintenance/central)
 "vRs" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/door/firedoor/heavy,
@@ -45190,6 +45231,7 @@
 	dir = 8
 	},
 /obj/structure/cable,
+/obj/effect/loot_site_spawner,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "wDB" = (
@@ -45711,7 +45753,7 @@
 	dir = 1
 	},
 /obj/machinery/power/apc{
-	acid_level = 4;
+	acid_level = null;
 	dir = 4;
 	name = "Security Office APC";
 	pixel_x = 26
@@ -61935,7 +61977,7 @@ bkC
 vla
 tec
 gwf
-eyr
+rxV
 wFb
 fxZ
 unG
@@ -64280,7 +64322,7 @@ aWa
 gSW
 bkF
 epW
-epW
+plq
 uVB
 hwE
 hwE
@@ -64754,7 +64796,7 @@ abs
 umL
 gpV
 eyr
-eyr
+rxV
 gwf
 gfQ
 aSc
@@ -65011,7 +65053,7 @@ umL
 umL
 bcs
 bcL
-wFb
+fcH
 gwf
 gfQ
 gfQ
@@ -66268,7 +66310,7 @@ bSK
 fCq
 hah
 vSP
-hah
+gDs
 pRx
 pRx
 amY
@@ -67867,7 +67909,7 @@ eAi
 bmp
 tVM
 glT
-epW
+plq
 tNn
 bku
 jZY
@@ -67886,7 +67928,7 @@ sAF
 biy
 eAi
 eAi
-epW
+plq
 epW
 cBV
 gfQ
@@ -68055,7 +68097,7 @@ gfQ
 gfQ
 npo
 aef
-hah
+gDs
 pWp
 pWp
 aIn
@@ -69627,7 +69669,7 @@ klX
 uaF
 hei
 klX
-lVd
+vQN
 lVd
 qiz
 qiz
@@ -69903,7 +69945,7 @@ olI
 mmn
 lVS
 fDO
-lVd
+vQN
 pWJ
 xun
 klX
@@ -70197,7 +70239,7 @@ bim
 iPv
 biz
 rVJ
-epW
+plq
 rVs
 low
 low
@@ -70916,7 +70958,7 @@ bhF
 biG
 aTW
 lVd
-lVd
+vQN
 sBt
 bfP
 kcR
@@ -71197,7 +71239,7 @@ oHS
 bwx
 oHS
 kjH
-hli
+dTQ
 lVd
 bfJ
 uDQ
@@ -71411,7 +71453,7 @@ hah
 qfz
 tEB
 cXi
-hah
+gDs
 hah
 aXP
 aen
@@ -77654,7 +77696,7 @@ siY
 pfj
 rGT
 rGT
-rGT
+iMU
 cOR
 bWG
 rGT
@@ -79164,7 +79206,7 @@ aeP
 ozS
 dFs
 dFs
-dFs
+jgR
 dFs
 aJm
 bqF
@@ -81466,7 +81508,7 @@ brH
 brH
 brH
 dFs
-dFs
+jgR
 gcu
 ydc
 sWF
@@ -82456,7 +82498,7 @@ fsz
 gfQ
 kQm
 kQm
-pos
+qov
 kQm
 mTe
 aOU
@@ -85810,7 +85852,7 @@ eGz
 oCD
 oCD
 oCD
-oCD
+iFH
 fmo
 hOE
 eGp
