@@ -1173,9 +1173,7 @@
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
 "afY" = (
-/obj/structure/chair/sofa/left{
-	dir = 2
-	},
+/obj/structure/chair/sofa/left,
 /obj/item/toy/plush/moth,
 /turf/open/floor/carpet,
 /area/medical/psychology)
@@ -31254,8 +31252,7 @@
 	pixel_y = 11
 	},
 /obj/item/storage/box/monkeycubes{
-	pixel_x = -6;
-	pixel_y = 0
+	pixel_x = -6
 	},
 /obj/item/storage/pill_bottle/mutadone{
 	pixel_x = 10;
@@ -34744,7 +34741,6 @@
 	dir = 8
 	},
 /obj/machinery/status_display/evac{
-	pixel_x = 0;
 	pixel_y = -32
 	},
 /turf/open/floor/plasteel/showroomfloor,
@@ -44534,9 +44530,7 @@
 /turf/open/floor/plasteel/white,
 /area/medical/surgery)
 "vYM" = (
-/obj/machinery/smartfridge/organ{
-	pixel_y = 0
-	},
+/obj/machinery/smartfridge/organ,
 /turf/closed/wall,
 /area/medical/surgery)
 "vYN" = (
@@ -48611,8 +48605,7 @@
 	pixel_y = 5
 	},
 /obj/item/storage/box/monkeycubes{
-	pixel_x = -6;
-	pixel_y = 0
+	pixel_x = -6
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
