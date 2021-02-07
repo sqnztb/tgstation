@@ -8309,6 +8309,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
+/mob/living/simple_animal/pet/dog/pug/mcgriff,
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/warden)
 "biS" = (
@@ -12325,6 +12326,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
+"dse" = (
+/obj/item/storage/secure/safe{
+	pixel_x = -23
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/security/armory)
 "dsw" = (
 /obj/structure/transit_tube/crossing/horizontal,
 /obj/structure/lattice/catwalk,
@@ -13404,6 +13411,9 @@
 	c_tag = "Arrivals Middle - West";
 	dir = 8
 	},
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/open/floor/plasteel/white/side{
 	dir = 4
 	},
@@ -14290,6 +14300,9 @@
 /obj/machinery/camera{
 	c_tag = "Arrivals Middle East";
 	dir = 4
+	},
+/obj/machinery/light{
+	dir = 8
 	},
 /turf/open/floor/plasteel/white/side{
 	dir = 8
@@ -18469,6 +18482,7 @@
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 1
 	},
+/obj/effect/spawner/lootdrop/armory_contraband/metastation,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "gGM" = (
@@ -36056,6 +36070,9 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_x = -29
+	},
 /turf/open/floor/plasteel/dark,
 /area/security/main)
 "riG" = (
@@ -39214,6 +39231,9 @@
 	dir = 4;
 	network = list("ss13","prison")
 	},
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_x = -29
+	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "sXv" = (
@@ -39632,7 +39652,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 4
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/hos)
 "tke" = (
 /obj/machinery/requests_console{
@@ -43278,6 +43298,7 @@
 /area/medical/medbay/central)
 "vla" = (
 /obj/structure/bed/dogbed/lia,
+/mob/living/simple_animal/hostile/carp/cayenne/lia,
 /turf/open/floor/wood,
 /area/crew_quarters/heads/hos)
 "vlz" = (
@@ -66401,7 +66422,7 @@ vnK
 rXc
 wHJ
 xIr
-nuO
+dse
 sXu
 nuO
 nuO
