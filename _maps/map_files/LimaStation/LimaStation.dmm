@@ -43343,7 +43343,7 @@
 /area/medical/medbay/central)
 "vla" = (
 /obj/structure/bed/dogbed/lia,
-/mob/living/simple_animal/hostile/carp/cayenne/lia,
+/mob/living/simple_animal/hostile/carp/lia,
 /turf/open/floor/wood,
 /area/command/heads_quarters/hos)
 "vlz" = (
